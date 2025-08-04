@@ -1,0 +1,209 @@
+/*===========================
+    9.DOWNLOAD css 
+===========================*/
+
+
+
+
+
+
+.download-area{
+	position: relative;
+	padding-top: 363px;
+	padding-bottom: 113px;
+	z-index: 9;
+	margin-top: -280px;
+	@media (max-width: 992px) {
+		padding-bottom: 50px;
+	}
+	&::before{
+		position: absolute;
+		content: '';
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		background-image: url(../images/download-bg.jpg);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	& .section-title{
+		@media #{$xs} {
+			text-align: center;
+		}
+		@media #{$sm} {
+			text-align: left;
+		}
+		& .title{
+			@media #{$xs} {
+				font-size: 32px;
+				line-height: 42px;
+			}
+		}
+	}
+
+}
+
+.download-btns{
+
+	& ul{
+		justify-content: flex-end;
+		@media #{$md} {
+			justify-content: flex-start;
+			margin-top: 20px;
+		}
+		@media #{$xs} {
+			justify-content: center;
+			margin-top: 20px;
+		}
+		& li{
+			margin-left: 10px;
+			// @media #{$xs} {
+			// 	margin-bottom: 20px;
+			// }
+			& a{
+				background: $white;
+				&:hover{
+					background: $heading-color;
+				}
+				&.main-btn-2{
+					background: $heading-color;
+					&:hover{
+						background: $white;
+					}
+				}
+			}
+			@media (max-width: 992px) {
+				width: 100%;
+				text-align: center;
+			}
+		}
+	}
+}
+
+
+
+
+/*===========================
+    .DOWNLOAD APP css 
+===========================*/
+
+
+.download-app-area{
+	position: relative;
+	padding-top: 118px;
+	padding-bottom: 120px;
+	z-index: 10;
+	margin-bottom: -120px;
+	@media #{$md} {
+		padding-bottom: 0;
+	}
+	@media #{$xs} {
+		padding-bottom: 0;
+	}
+	&::before{
+		position: absolute;
+		content: '';
+		left: 50%;
+		top: 0;
+		transform: translateX(-50%);
+		height: 100%;
+		width: 1480px;
+		background-image: url(../images/download-bg.jpg);
+		z-index: -1;
+		background-size: cover;
+		background-position: center;
+		@media #{$laptop} {
+			width: 100%;
+		}
+		@media #{$lg} {
+			width: 100%;
+		}
+		@media #{$md} {
+			width: 100%;
+		}
+		@media #{$xs} {
+			width: 100%;
+		}
+	}
+	&::after{
+		position: absolute;
+		content: '';
+		left: 0;
+		bottom: 120px;
+		height: 620px;
+		width: 100%;
+		background-image: url(../images/bg-shape-2.png);
+		background-size: 100% 100%;
+		z-index: -2;
+	}
+	& .download-app-case{
+		position: absolute;
+		right: 240px;
+		bottom: 0;
+		@media #{$laptop} {
+			right: 100px;
+		}
+		@media #{$lg} {
+			right: 0;
+		}
+		// @media #{$md} {
+		// 	position: static;
+		// 	text-align: right;
+		// 	margin-top: 40px;
+		// }
+		// @media #{$xs} {
+		// 	position: static;
+		// 	text-align: right;
+		// 	margin-top: 40px;
+		// }
+		@media (max-width: 992px) {
+			position: static;
+			text-align: center;
+			margin-left: -18%;
+		}
+		
+	}
+	&.download-page-area{
+		margin-top: 0px;
+		&::after{
+			display: none;
+		}
+	}
+}
+
+.download-app-content{
+	@media #{$xs} {
+		text-align: center;
+	}
+	@media (max-width: 992px) {
+		margin-bottom: 20px;
+	}
+	& .title{
+		font-size: 50px;
+		line-height: 64px;
+		padding-bottom: 55px;
+		@media #{$lg} {
+			font-size: 40px;
+			line-height: 54px;
+		}
+		@media #{$xs} {
+			font-size: 27px;
+			line-height: 40px;
+		}
+	}
+	& ul{
+		@media #{$xs} {
+			justify-content: center;
+		}
+		& li{
+			margin-right: 10px;
+			@media (max-width: 992px) {
+				width: 100%;
+				text-align: center;
+				margin-bottom: 0px;
+			}
+		}
+	}
+}

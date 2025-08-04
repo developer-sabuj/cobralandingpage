@@ -1,0 +1,168 @@
+/*===========================
+    12.FOOTER css 
+===========================*/
+
+
+
+
+
+
+
+
+
+.footer-area{
+	padding-top: 210px;
+	padding-bottom: 113px;
+	& .copyright{
+		font-size: 12px;
+		font-weight: 600;
+		color: #259f75;
+		text-transform: uppercase;
+		padding-top: 35px;
+	}
+}
+
+.footer-about{
+	& p{
+		color: $white;
+		line-height: 30px;
+		padding-right: 80px;
+		padding-top: 40px;
+		padding-bottom: 18px;
+		@media (max-width: 992px) {
+			padding-right: 30px;
+		}
+	}
+ 	& ul{
+		display: flex;
+		& li{
+			& a{
+				height: 48px;
+				width: 48px;
+				text-align: center;
+				line-height: 51px;
+				border-radius: 50%;
+				background: #00452e;
+				color: #1d8360;
+				font-size: 20px;
+				margin-right: 10px;
+				@include transition(0.3s);
+				&:hover{
+					background: $theme-color;
+					color: $heading-color;
+				}
+			}
+		}
+	}
+}
+
+
+
+.footer-list{
+	@media #{$md} {
+		padding-left: 0;
+	}
+	@media #{$xs} {
+		padding-left: 0;
+	}
+	& .title{
+		font-size: 14px;
+		font-weight: 700;
+		color: #95cebb;
+		text-transform: capitalize;
+	}
+	& ul{
+		margin-top: 48px;
+		& li{
+			& a{
+				font-weight: 500;
+				color: $white;
+				line-height: 40px;
+				@include transition(0.3s);
+				&:hover{
+					color: $theme-color;
+				}
+			}
+		}
+	}
+	& .input-box{
+		margin-top: 60px;
+		position: relative;
+		& input{
+			width: 100%;
+			line-height: 60px;
+			background: #034f36;
+			border-radius: 40px;
+			color: #95cebb;
+			font-size: 14px;
+			font-weight: 500;
+			border: 0;
+			padding-left: 40px;
+			&::placeholder{
+				opacity: 1;
+				color: #95cebb;
+			}
+		}
+		& button{
+			position: absolute;
+			right: 10px;
+			top: 50%;
+			transform: translateY(-50%);
+			border: 0;
+			background: $theme-color;
+			color: $heading-color;
+			font-size: 20px;
+			width: 66px;
+			line-height: 48px;
+			border-radius: 40px;
+
+		}
+		@media (max-width: 992px) {
+			width: 90%;
+		}
+	}
+	&.footer-newsleatter{
+		margin-left: -30px;
+		@media #{$xs} {
+			margin-left: 0;
+		}
+		@media #{$sm} {
+			margin-left: 0;
+		}
+	}
+}
+
+
+
+
+
+
+/*==== BACK TO TOP ====*/
+
+.back-to-top {
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: $theme-color;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    border-radius: 50%;
+    @include transition(0.3s);
+    cursor: pointer;
+    box-shadow: 0 6px 14px 0 rgba(0, 0, 0, 0.09);
+
+    & i {
+        color: $white;
+    }
+
+    &:hover {
+        background-color: $theme-color;
+    }
+}
+
+

@@ -1,0 +1,82 @@
+/*===========================
+    5.CAPTURE css 
+===========================*/
+
+
+
+
+
+
+.capture-area{
+	width: 100vw;
+	overflow: hidden;
+	position: relative;
+	z-index: 10;
+	.container{
+		//width: 100vw !important;
+		overflow: visible;
+		.col-12{
+			overflow: visible;
+		}
+	}
+}
+
+
+
+.capture-item{
+	background: $white;
+	margin: 0 15px;
+	& .capture-thumb{
+		box-shadow: 0px 30px 50px rgba(255, 190, 0, 0.2);
+		& img{
+			width: 100%;
+		}
+	}
+	& .capture-content{
+		padding: 40px 61px;
+		& i{
+			color: $theme-color;
+			font-size: 60px;
+		}
+		& .title{
+			font-size: 20px;
+			line-height: 30px;
+			font-weight: 700;
+			color: $black;
+			padding-top: 30px;
+			padding-bottom: 20px;
+		}
+	}
+}
+
+
+.capture-active{
+	overflow: visible;
+	@media (min-width: 992px) {
+		
+	
+	}	
+	.slick-list{
+		overflow: visible;
+	}
+	& .slick-arrow{
+		position: absolute;
+		top: -76px;
+		font-size: 40px;
+		color: $heading-color;
+		@include transition(0.3s);
+		z-index: 99;
+		cursor: pointer;
+		&:hover{
+			color: $theme-color;
+		}
+		&.prev{
+			right: 70px;
+		}
+		&.next{
+			right: 15px;
+		}
+	}
+}
+
+

@@ -1,0 +1,126 @@
+/*===========================
+    7.INTRO css 
+===========================*/
+
+
+
+
+.intro-area{
+	position: relative;
+	z-index: 11;
+	padding-top: 113px;
+	position: relative;
+	@media (max-width: 992px) {
+		padding-top: 50px;
+	}
+	&::before{
+		position: absolute;
+		content: '';
+		left: 0;
+		top: 62%;
+		transform: translateY(-50%);
+		background-image: url(../images/features-shape.jpg);
+		width: 850px;
+		height: 600px;
+		@media #{$laptop} {
+			width: 600px;
+		}
+		@media #{$lg} {
+			width: 470px;
+		}
+		@media (max-width: 992px) {
+			top: initial;
+			bottom: 450px;
+			width: 100%;
+		}
+		@media (max-width: 576px) {
+			bottom: 750px;
+		}
+	}
+
+}
+
+
+
+
+.intro-thumb{
+	@media #{$md} {
+		margin-bottom: 40px;
+		margin-top: 30px;
+		text-align: center;
+	}
+	@media #{$xs} {
+		margin-bottom: 40px;
+		margin-top: 30px;
+		text-align: center;
+	}
+	& img{
+		box-shadow: 0px 30px 50px 0px rgba(255, 168, 0, 0.3);
+		border-radius: 30px;
+	}
+}
+
+
+.intro-content{
+	@media (max-width: 992px) {
+		margin: 0 auto;
+	}
+	& .intro-item{
+		position: relative;
+		padding-left: 90px;
+		@media #{$xs} {
+			padding-left: 0;
+		}
+		@media #{$sm} {
+			padding-left: 80px;
+		}
+		@media (max-width: 992px) {
+			padding: 0 15px;
+		}
+		& i{
+			font-size: 50px;
+			color: $theme-color;
+			position: absolute;
+			left: 0;
+			top: 0;
+			@media #{$xs} {
+				position: static;
+				margin-bottom: 20px;
+			}
+			@media #{$sm} {
+				position: absolute;
+				margin-bottom: 0px;
+			}
+			@media (max-width: 992px) {
+				left: -60px;
+			}
+		}
+		& .title{
+			font-size: 20px;
+			color: $black;
+		}
+		& p{
+			font-size: 14px;
+			line-height: 30px;
+			color: $text-color;
+		}
+	}
+	& .intro-btns{
+		margin-top: 55px;
+		@media (max-width: 992px) {
+			margin: 55px auto 0 auto;
+			width: max-content;
+		}
+		& ul{
+			& li{
+				margin-right: 10px;
+				@media (max-width: 992px) {
+					width: 100%;
+					text-align: center;
+					margin-bottom: 0px;
+				}
+			}
+		}
+	}
+}
+

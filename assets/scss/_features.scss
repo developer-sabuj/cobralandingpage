@@ -1,0 +1,151 @@
+/*===========================
+    4.FEATURES css 
+===========================*/
+
+
+
+.features-area{
+	position: relative;
+	padding-bottom: 113px;
+	margin-top: -75px;
+	@media #{$xs} {
+		margin-top: 30px;
+	}
+	@media (max-width: 992px) {
+		padding: 0 15px 113px 15px;
+	}
+	&::before{
+		position: absolute;
+		content: '';
+		left: 0;
+		top: 75px;
+		height: 330px;
+		width: 100%;
+		background-image: url(../images/bg-shape.png);
+		opacity: .5;
+		background-size: 100% 100%;
+	}
+
+}
+
+.features-box{
+	padding: 114px 150px 112px;
+	box-shadow: 0px 30px 50px rgba(255, 190, 0, 0.1);
+	background: $white;
+	background-image: url(../images/features-bg.jpg);
+	background-size: 100% 100%;
+	position: relative;
+	@media #{$laptop} {
+		padding: 50px;
+	}
+	@media #{$lg} {
+		padding: 114px 30px 112px;
+	}
+	@media #{$md} {
+		padding: 40px;
+		background-size: cover;
+	}
+	@media #{$xs} {
+		padding: 40px;
+		background-size: cover;
+	}
+	@media (max-width: 992px) {
+		background: $white;
+		background-image: url(../images/features-bg-responsive.jpg);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center bottom;
+	}
+	& .features-play{
+		position: absolute;
+		right: 30px;
+		bottom: 30px;
+		@media (max-width: 992px) {
+			position: relative;
+			right: initial;
+			bottom: initial;
+			height: 250px;
+		}
+		& a{
+			height: 110px;
+			width: 110px;
+			background: $theme-color;
+			border-radius: 50%;
+			line-height: 110px;
+			text-align: center;
+			color: $heading-color;
+			font-size: 24px;
+			@media (max-width: 992px) {
+				height: 55px;
+				width: 55px;
+				line-height: 60px;
+				font-size: 18px;
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%);
+				bottom: 20%;
+			}
+		}
+	}
+}
+
+
+
+.features-item{
+	padding-right: 20px;
+	@media #{$laptop} {
+		padding-right: 0;
+	}
+	@media #{$lg} {
+		padding-right: 0;
+	}
+	@media #{$md} {
+		padding-right: 0;
+	}
+	@media #{$xs} {
+		padding-right: 0;
+	}
+
+	& i{
+		color: $theme-color;
+		font-size: 60px;
+
+	}
+	& .title{
+		font-size: 20px;
+		line-height: 30px;
+		color: $black;
+		padding-bottom: 24px;
+		padding-top: 26px;
+		@media #{$laptop} {
+			font-size: 18px;
+			line-height: 28px;
+		}
+		@media #{$lg} {
+			font-size: 17px;
+			line-height: 28px;
+		}
+		@media #{$xs} {
+			font-size: 18px;
+		}
+		@media #{$sm} {
+			font-size: 20px;
+		}
+	}
+	& p{
+		@media #{$xs} {
+			font-size: 15px;
+		}
+	}
+}
+.features-title{
+	padding-bottom: 13px;
+	& .title{
+		font-size: 40px;
+		line-height: 54px;
+		@media #{$xs} {
+			font-size: 30px;
+			line-height: 40px;
+		}
+	}
+}

@@ -1,0 +1,63 @@
+/*===========================
+    10.SECREENSHOT css 
+===========================*/
+
+
+
+
+
+
+.screenshot-area{
+	padding-top: 113px;
+	overflow: hidden;
+	background-size: 100% 100%;
+	@media (max-width: 992px) {
+		padding-top: 50px;
+	}
+	& .section-title{
+		padding-bottom: 23px;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		width: 100%;
+		& .title{
+			color: $white;
+		}
+		.screenshot-arrows {
+			width: 30%;
+			position: relative;
+			padding-bottom: 50px;
+		}
+		@media (max-width: 992px) {
+			.screenshot-arrows{ 
+				display: none;
+			}
+			& .title{
+				text-align: center;
+			}
+		}
+	}
+	& .slick-arrow{
+		position: absolute;
+		font-size: 40px;
+		color: $heading-color;
+		@include transition(0.3s);
+		z-index: 99;
+		cursor: pointer;
+		height: min-content;
+		&:hover{
+			color: $theme-color;
+		}
+		&.prev{
+			right: 70px;
+		}
+		&.next{
+			right: 15px;
+		}
+	}
+	& .screenshot-item{	
+		img{
+			margin: 0 auto;
+		}
+	}
+}
